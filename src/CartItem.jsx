@@ -7,6 +7,7 @@ const CartItem = ({ onContinueShopping }) => {
   const cart = useSelector(state => state.cart.items);
   const dispatch = useDispatch();
 
+
   // Calculate total amount for all products in the cart
   const calculateTotalAmount = () => {
     let totalAmount = 0
@@ -40,7 +41,7 @@ const CartItem = ({ onContinueShopping }) => {
           return total
   };
 
-  
+
   return (
     <div className="cart-container">
       <h2 style={{ color: 'black' }}>Total Cart Amount: ${calculateTotalAmount()}</h2>

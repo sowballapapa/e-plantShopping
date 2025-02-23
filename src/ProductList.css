@@ -39,6 +39,16 @@ body {
    
 }
 
+
+.category{
+    text-align: center;
+    margin: 10px;
+    h1{
+        border-bottom: 1px black solid;
+        border-top: 1px black solid;
+    }
+}
+
 /* Product Grid */
 .product-grid {
     display:flex;
@@ -110,7 +120,6 @@ body {
 .product-button:hover {
     background-color: #c0392b;
 }
-
 /* Pseudo-elements - Sale badge */
 .product-card::before {
     content: "SALE";
@@ -214,9 +223,10 @@ body {
   .product-button:hover {
     background-color: #45a049;
   }
-  
+
   .product-button.added-to-cart {
     background-color: grey; /* Grey when product is added */
+      cursor: not-allowed;
   }
   @media (max-width: 1200px) {
     .product-card {
